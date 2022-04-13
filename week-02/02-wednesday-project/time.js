@@ -36,7 +36,7 @@ When you’re done, you should have a time library that exposes the following he
             let dayIndex = t.getDay();
             return days[dayIndex];
         }
-
+        // getMonth is similar
         Constructor.prototype.getMonth = function (time) {
             let t = this.time;
             let monthIndex = t.getMonth();
@@ -50,6 +50,41 @@ When you’re done, you should have a time library that exposes the following he
             let epoch =  t.setSeconds(t.getSeconds() + amount);
             return new Date(epoch);
            
+        }
+
+        Constructor.prototype.addMinutes = function (amount) {
+            let t = this.time;
+
+            let epoch = t.setMinutes(t.getMinutes() + amount);
+            return new Date(epoch);
+        }
+
+        Constructor.prototype.addHours = function (amount) {
+            let t = this.time;
+
+            let epoch = t.setHours(t.getHours + amount);
+            return new Date(epoch);
+        }
+
+        Constructor.prototype.addDays = function (amount) {
+            let t = this.time;
+
+            let epoch = t.setDay(t.getDay() + amount);
+            return new Date(epoch);
+        }
+
+        Constructor.prototype.addMonths = function (amount) {
+            let t = this.time;
+
+            let epoch = t.setMonth(t.getMonth() + amount);
+            return new Date(epoch);
+        }
+
+        Constructor.prototype.addYears = function (amount) {
+            let t = this.time;
+
+            let epoch = t.setYear(t.getYear() + amount);
+            return new Date(epoch);
         }
 
         // exporting the constructor object
