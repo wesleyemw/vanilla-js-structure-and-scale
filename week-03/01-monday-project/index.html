@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let sandwiches = ['tuna','turkey', 'pb&j'];
+        let condiments = 'mayo and mustard';
+
+        //console.log(sandwiches);
+
+        // using spread operator
+        //console.log(...sandwiches);
+
+        function add (num1, num2) {
+            return num1 + num2;
+        }
+
+        let numbers = [4, 2];
+
+        let total1 = add(numbers[0], numbers[1]);
+        let total2 = add(...numbers);
+
+        // console.log(total1);
+        // console.log(total2);
+
+
+        // The Array.isArray() method
+        // check if a js object is a array (boolean)
+
+        // if (Array.isArray(sandwiches)) {
+        //     console.log('Sandwiches are an array');
+        // }
+
+        // if (Array.isArray(condiments)) {
+        //     console.log('Condiments are an array');
+        // }
+
+
+    </script>
+    <script src="index.js" type="module"></script>
+</body>
+</html>
