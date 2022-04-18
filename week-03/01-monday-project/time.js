@@ -26,32 +26,32 @@ class Time {
 
     addSeconds(amount) {
         let epochSeconds = this.date.setSeconds( (this.date.getSeconds()) + (amount));
-        return new Date(epochSeconds).toDateString();
+        return new Date(epochSeconds);
     }
 
     addMinutes(amount) {
         let epochMinutes = this.date.setMinutes( (this.date.getMinutes()) + (amount));
-        return new Date(epochMinutes).toDateString();
+        return new Date(epochMinutes);
     }
 
     addHours(amount) {
         let epochHours = this.date.setHours((this.date.getHours()) + (amount) );
-        return new Date(epochHours).toDateString();
+        return new Date(epochHours);
     }
 
     addDays(amount) {
         let epochDays = this.date.setDay( (this.date.getDay()) + (amount) );
-        return new Date(epochDays).toDateString();
+        return new Date(epochDays);
     }
 
     addMonths(amount) {
         let epochMonths = this.date.setMonth( (this.date.getMonth()) + (amount) );
-        return new Date(epochMonths).toDateString();
+        return new Date(epochMonths);
     }
 
     addYears(amount) {
         let epochYears = this.date.setFullYear( (this.date.getFullYear()) + (amount) );
-        return new Date(epochYears).toDateString();
+        return new Date(epochYears);
     }
 
 }
